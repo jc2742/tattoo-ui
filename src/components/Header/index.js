@@ -1,37 +1,38 @@
+import { Flex } from "antd";
+import { FiInstagram } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+import { Icons } from "../atomic/atoms/Icons";
 
 export default function Header() {
+
   return (
-    <></>
-    // <nav className="sticky bg-white top-0 min-h-[90px] h-[90px] px-9 flex justify-between items-center gap-9 border-b border-b-gray-200 shadow-[0px_3px_16px_0px_rgba(58,_121,_216,_0.10)] z-[1]">
-    //   <Link to='/'><img className="h-8 w-auto" src={Logo} alt="Company Logo" /></Link>
-    //   <div className='ml-auto flex items-center gap-6'>
-    //     {navItems.map((item) =>
-    //       <Link to={item.link} className="flex items-center gap-1 text-sm text-dark hover:text-primary">
-    //         {item.icon || null}
-    //         {item.title}
-    //       </Link>
-    //     )}
-    //   </div>
-    //   <div className="flex items-center gap-4">
-    //     <RiUser3Fill />
-    //     <Button>Logout</Button>
-    //   </div>
-    // </nav>
+    <nav className="sticky top-0 bg-black w-full py-[32px] px-[48px] justify-between flex">
+      <h2 className="text-white text-xl font-pacifico">
+        Chinatown Tattoo
+      </h2>
+      <Flex align="center" gap={10}>
+        {
+          NavIcons.map(element => {
+            return element.name.length > 0 ? <Icons name={element.name} /> : element.icon
+          })
+        }
+      </Flex>
+    </nav>
   );
 }
 
-const navItems = [
-
+const NavIcons = [
   {
-    title: 'About',
-    link: '#/'
+    name: '',
+    icon: <FiInstagram size={20} color="#FFF" />
   },
   {
-    title: 'Help',
-    link: '#/'
+    name: '',
+    icon: <FaFacebook size={20} color="#FFF" />
   },
   {
-    title: 'Admin',
-    link: '#/'
-  },
+    name: '',
+    icon: <FaTiktok size={20} color="#FFF" />
+  }
 ]

@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Rubik !important;
+  font-family: sans-serif;
 }
