@@ -7,8 +7,6 @@ import red_led from '../../assets/images/red_led.jpg'
 import tattooing from '../../assets/images/tattooing.jpg'
 import wrist_tat from '../../assets/images/wrist_tat.jpg'
 import zoom_in from '../../assets/images/zoom_in.jpg'
-import icon from '../../assets/images/icon.jpg'
-
 
 
 import ServiceCardList from "../../components/atomic/molecules/ServiceCardList";
@@ -36,16 +34,16 @@ const HomeContainer = () => {
           </Button>
         </Flex>
 
-        <div className="relative h-[20%]">
+        <div className="relative h-[20.1%] w-full">
           <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="41,100 87,0 100,100 0,100 23,0" fill='black' />
+            <polygon points="41,100 87,50 100,100 0,100 23,50" fill='black' />
           </svg>
         </div>
       </div>
 
       <ServiceCardList serviceCards={ServiceCardInfo} />
 
-      <div className="w-full  h-[calc(100vh_-_90px)] bg-cover bg-center relative z--1 mt-[-96px]" style={{ backgroundImage: `url(${back_tat})` }}>
+      <div className="w-full  h-[calc(100vh_-_90px)] bg-cover bg-center relative z--1" style={{ backgroundImage: `url(${back_tat})` }}>
         <div class="absolute bg-black opacity-75 top-0 right-0 bottom-0 left-0" />
 
         <Flex gap={15} vertical={true} align="center" justify="center" className="relative h-[80%] mx-20 py-20 text-white">
