@@ -3,7 +3,6 @@ import { FiInstagram } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { Icons } from "../atomic/atoms/Icons";
-import icon from '../../assets/images/icon.jpg'
 
 export default function Header() {
   return (
