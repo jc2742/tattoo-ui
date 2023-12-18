@@ -8,3 +8,9 @@
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
 }
+
+.ant-btn-primary {
+  &:hover {
+    border-color: black !important;
+  }
+}
