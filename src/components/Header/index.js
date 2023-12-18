@@ -3,11 +3,13 @@ import { FiInstagram } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { Icons } from "../atomic/atoms/Icons";
+import icon from '../../assets/images/icon.jpg'
 
 export default function Header() {
   return (
     <nav className="sticky top-0 bg-black w-full py-[32px] px-[48px] justify-between flex z-10">
-      <a href="/">
+
+      <a href="/" className="flex gap-4">
         <h2 className="text-white text-2xl font-pacifico">
           Chinatown Tattoo
         </h2>

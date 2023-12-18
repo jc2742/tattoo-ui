@@ -7,6 +7,8 @@ import red_led from '../../assets/images/red_led.jpg'
 import tattooing from '../../assets/images/tattooing.jpg'
 import wrist_tat from '../../assets/images/wrist_tat.jpg'
 import zoom_in from '../../assets/images/zoom_in.jpg'
+import icon from '../../assets/images/icon.jpg'
+
 
 
 import ServiceCardList from "../../components/atomic/molecules/ServiceCardList";
