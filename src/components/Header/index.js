@@ -6,7 +6,7 @@ import { Icons } from "../atomic/atoms/Icons";
 
 export default function Header() {
   return (
-    <nav className="sticky top-0 bg-black w-full py-[32px] px-[48px] justify-between flex">
+    <nav className="sticky top-0 bg-black w-full py-[32px] px-[48px] justify-between flex z-10">
       <a href="/">
         <h2 className="text-white text-2xl font-pacifico">
           Chinatown Tattoo
@@ -27,11 +27,12 @@ const NavIcons = [
   {
     name: '',
     icon: <FiInstagram size={20} color="#FFF" />,
-    link: ''
+    link: 'https://www.instagram.com/chinatowntattooles/?hl=en'
   },
   {
     name: '',
-    icon: <FaFacebook size={20} color="#FFF" />
+    icon: <FaFacebook size={20} color="#FFF" />,
+    link: 'https://www.facebook.com/chinatowntattooles/'
   },
   {
     name: '',
